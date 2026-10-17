@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#101828" />
+  <meta name="description" content="Shop headphones, AirPods, and power banks at Online in K Block, Halishahar, Chattogram." />
+  <title>Online — Everyday Tech, Made Easy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--ink:#101828;--muted:#667085;--line:#eaecf0;--bg:#f8fafc;--white:#fff;--lime:#d7fb67;--green:#147d54;--radius:22px}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--bg);color:var(--ink);font-family:"DM Sans",sans-serif;line-height:1.55}
+    a{color:inherit;text-decoration:none} button{font:inherit}.container{width:min(1160px,calc(100% - 40px));margin:auto}
+    .announcement{background:var(--ink);color:#fff;text-align:center;padding:9px 14px;font-size:12px;letter-spacing:.04em}
+    header{background:rgba(248,250,252,.92);backdrop-filter:blur(14px);position:sticky;top:0;z-index:10;border-bottom:1px solid rgba(234,236,240,.8)}
+    .nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:10px;font-family:Manrope,sans-serif;font-weight:800;font-size:23px;letter-spacing:-1px}
+    .brand-mark{width:34px;height:34px;border-radius:11px;background:var(--lime);display:grid;place-items:center;font-weight:900}
+    .nav-links{display:flex;align-items:center;gap:30px;color:#475467;font-size:14px}.nav-links a:hover{color:var(--ink)}
+    .nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:0;border-radius:999px;padding:13px 19px;font-weight:700;cursor:pointer;transition:transform .2s,background .2s}
+    .nav-cta{background:var(--ink);color:#fff;font-size:13px}.btn:hover,.nav-cta:hover{transform:translateY(-2px)}
+    .hero{padding:62px 0 54px}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center}
+    .eyebrow{display:inline-flex;align-items:center;gap:8px;background:#eef9d0;color:#33450c;padding:8px 12px;border-radius:99px;font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase}
+    .eyebrow span{width:7px;height:7px;background:#6d9a00;border-radius:50%}
+    h1,h2,h3,p{margin-top:0} h1{font:800 clamp(42px,5.3vw,70px)/1.04 Manrope,sans-serif;letter-spacing:-3.4px;margin:22px 0}
+    h1 em{font-style:normal;color:#789d18}.hero-copy{max-width:510px;color:var(--muted);font-size:17px;margin-bottom:27px}
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap}.btn-primary{background:var(--ink);color:#fff}.btn-secondary{background:#fff;border:1px solid var(--line)}
+    .micro-proof{display:flex;align-items:center;gap:12px;margin-top:30px;color:var(--muted);font-size:13px}.avatars{display:flex}.avatar{width:29px;height:29px;border:2px solid var(--bg);border-radius:50%;display:grid;place-items:center;margin-left:-7px;background:#f2d2b6;font-size:12px}.avatar:first-child{margin-left:0;background:#d8e6fb}.avatar:nth-child(2){background:#d4f3d4}.avatar:nth-child(3){background:#f7dfb1}
+    .hero-art{position:relative;min-height:430px;border-radius:32px;background:#e8eddf;overflow:hidden;display:grid;place-items:center}
+    .art-orb{position:absolute;width:300px;height:300px;border-radius:50%;background:var(--lime);top:50px;right:30px;opacity:.85}
+    .art-card{position:absolute;background:#fff;border:1px solid rgba(255,255,255,.8);border-radius:24px;box-shadow:0 25px 60px #34405422}
+    .headphone{width:180px;height:180px;left:44px;top:93px;transform:rotate(-12deg);display:grid;place-items:center;background:#202733}
+    .headphone:before{content:"";position:absolute;width:94px;height:100px;border:19px solid #151b25;border-bottom:0;border-radius:65px 65px 0 0;top:18px}
+    .cup{position:absolute;width:36px;height:63px;background:linear-gradient(90deg,#3d4654,#151b25);border-radius:16px;top:91px}.cup.left{left:23px}.cup.right{right:23px}
+    .earbuds{width:130px;height:150px;right:42px;bottom:55px;transform:rotate(9deg);display:flex;justify-content:center;align-items:center;gap:8px;background:#fff}
+    .bud{height:70px;width:35px;border-radius:22px 22px 16px 16px;background:linear-gradient(90deg,#fff,#e3e7ed);border:1px solid #d0d5dd;position:relative}
+    .bud:after{content:"";position:absolute;width:13px;height:37px;background:#f4f5f7;border:1px solid #d0d5dd;border-radius:10px;bottom:-31px;left:10px}
+    .powerbank{width:92px;height:150px;right:118px;top:64px;transform:rotate(14deg);background:linear-gradient(130deg,#303a49,#111827);border-radius:18px;display:flex;align-items:center;justify-content:center}
+    .powerbank:after{content:"";width:4px;height:22px;border-radius:4px;background:#a7f34a;box-shadow:0 0 12px #a7f34a}
+    .float-tag{position:absolute;left:24px;bottom:26px;padding:12px 15px;background:#fff;border-radius:14px;box-shadow:0 8px 30px #34405414;font-size:12px;font-weight:700}
+    .float-tag small{display:block;color:var(--muted);font-weight:500;margin-top:2px}
+    .benefits{padding:17px 0 35px}.benefit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+    .benefit{display:flex;align-items:center;gap:14px;background:#fff;border:1px solid var(--line);padding:18px;border-radius:17px}.benefit-icon{height:42px;width:42px;flex:none;border-radius:13px;background:#f1f5e7;display:grid;place-items:center;font-size:20px}.benefit strong{display:block;font-size:14px}.benefit span{font-size:12px;color:var(--muted)}
+    section.products{padding:70px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:28px}.kicker{font-size:12px;font-weight:800;letter-spacing:.12em;color:#77951c;text-transform:uppercase;margin-bottom:9px}.section-head h2{font:800 clamp(29px,3.6vw,42px)/1.12 Manrope,sans-serif;letter-spacing:-1.7px;margin-bottom:8px}.section-head p{color:var(--muted);margin-bottom:0;max-width:470px}
+    .product-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.product{background:#fff;border:1px solid var(--line);border-radius:24px;overflow:hidden;transition:transform .2s,box-shadow .2s}.product:hover{transform:translateY(-4px);box-shadow:0 18px 45px #1018280d}
+    .product-visual{height:230px;position:relative;display:grid;place-items:center;overflow:hidden}.visual-headphone{background:#e8edf7}.visual-airpods{background:#f8eee4}.visual-powerbank{background:#e9f2e5}
+    .pill{position:absolute;top:15px;left:15px;border-radius:99px;padding:6px 10px;background:#fff;font-size:10px;font-weight:800;letter-spacing:.04em;text-transform:uppercase}
+    .product-visual .headphones-object{height:110px;width:126px;border:17px solid #242b36;border-bottom:0;border-radius:80px 80px 0 0;position:relative;transform:rotate(-8deg);margin-top:22px}
+    .headphones-object:before,.headphones-object:after{content:"";position:absolute;width:27px;height:48px;top:70px;border-radius:12px;background:linear-gradient(90deg,#414b5a,#111827)}.headphones-object:before{left:-20px}.headphones-object:after{right:-20px}
+    .pods-case{height:91px;width:120px;background:linear-gradient(150deg,#fff,#e4e7ec);border:1px solid #d0d5dd;border-radius:28px 28px 35px 35px;box-shadow:0 18px 25px #7b5c3e1c;position:relative;margin-top:48px}
+    .pods-case:before{content:"";position:absolute;left:-1px;right:-1px;top:20px;height:2px;background:#c7cdd5}
+    .pod{position:absolute;width:20px;height:54px;background:linear-gradient(90deg,#fff,#e5e7eb);border:1px solid #d0d5dd;border-radius:15px 15px 10px 10px;top:-64px}.pod:after{content:"";position:absolute;width:9px;height:25px;bottom:-20px;left:5px;border-radius:8px;background:#f7f8fa;border:1px solid #d0d5dd}.pod.one{left:28px;transform:rotate(-8deg)}.pod.two{right:28px;transform:rotate(8deg)}
+    .bank-object{height:145px;width:88px;border-radius:17px;background:linear-gradient(130deg,#384354,#111827);box-shadow:12px 18px 28px #24332222;transform:rotate(10deg);position:relative;display:grid;place-items:center}.bank-object:before{content:"";width:5px;height:5px;border-radius:50%;background:#b8fa64;box-shadow:0 0 10px #b8fa64}.bank-object:after{content:"";position:absolute;top:-5px;width:26px;height:4px;border-radius:3px;background:#657184}
+    .product-info{padding:20px}.category{font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:#8a9b61;font-weight:800}.product h3{font:700 19px Manrope,sans-serif;margin:7px 0}.product-desc{font-size:13px;color:var(--muted);min-height:40px;margin-bottom:17px}.price-row{display:flex;align-items:center;justify-content:space-between;gap:10px;border-top:1px solid var(--line);padding-top:16px}.price{font:800 23px Manrope,sans-serif;letter-spacing:-.7px}.order-mini{background:var(--ink);color:#fff;padding:10px 13px;border-radius:12px;font-size:12px;font-weight:700}
+    .note{font-size:12px;color:var(--muted);margin-top:16px}
+    .promo{padding:22px 0 72px}.promo-inner{background:var(--ink);color:#fff;border-radius:28px;padding:42px 44px;display:flex;align-items:center;justify-content:space-between;gap:25px;overflow:hidden;position:relative}.promo-inner:after{content:"";position:absolute;width:250px;height:250px;border-radius:50%;background:#d7fb6712;right:23%;top:-140px}.promo h2{font:800 clamp(26px,3.5vw,38px)/1.15 Manrope,sans-serif;letter-spacing:-1.3px;margin-bottom:10px}.promo p{color:#c3c9d4;margin-bottom:0}.promo .btn{background:var(--lime);color:var(--ink);white-space:nowrap;position:relative;z-index:1}
+    .about{padding:10px 0 72px}.about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:45px;align-items:start}.about h2{font:800 34px/1.12 Manrope,sans-serif;letter-spacing:-1.4px}.about p{color:var(--muted)}.location-card{border:1px solid var(--line);background:#fff;padding:23px;border-radius:20px;display:flex;gap:16px;align-items:flex-start}.location-pin{background:#f0f6df;border-radius:13px;width:45px;height:45px;display:grid;place-items:center;font-size:21px;flex:none}.location-card strong{display:block;margin:2px 0 5px}.location-card span{font-size:14px;color:var(--muted)}
+    footer{background:#fff;border-top:1px solid var(--line);padding:28px 0}.footer-row{display:flex;align-items:center;justify-content:space-between;gap:20px}.footer-copy{font-size:12px;color:var(--muted)}.footer-links{display:flex;gap:18px;font-size:12px;color:#475467}
+    .wa-float{position:fixed;right:20px;bottom:20px;z-index:20;width:58px;height:58px;border-radius:50%;background:#20c66a;color:#fff;display:grid;place-items:center;box-shadow:0 10px 28px #0d6c3d44;font-size:26px;border:3px solid #fff}
+    @media(max-width:850px){.hero-grid{grid-template-columns:1fr;gap:30px}.hero{padding-top:42px}.hero-art{min-height:390px}.product-grid{gap:13px}.product-visual{height:190px}.product-info{padding:16px}.price-row{align-items:flex-start;flex-direction:column}.order-mini{width:100%;text-align:center}.about-grid{grid-template-columns:1fr;gap:18px}}
+    @media(max-width:600px){.container{width:min(100% - 28px,1160px)}.nav{height:66px}.nav-links{display:none}.nav-cta{padding:11px 13px}.brand{font-size:21px}.hero{padding:36px 0 30px}h1{letter-spacing:-2.3px;font-size:47px}.hero-copy{font-size:15px}.hero-art{min-height:335px;border-radius:25px}.art-orb{width:230px;height:230px;top:35px;right:12px}.headphone{width:140px;height:140px;left:22px;top:78px}.headphone:before{width:72px;height:80px;border-width:15px;top:14px}.cup{width:28px;height:50px;top:72px}.cup.left{left:17px}.cup.right{right:17px}.earbuds{width:105px;height:120px;right:22px;bottom:38px}.bud{height:57px;width:28px}.bud:after{height:28px;width:10px;bottom:-23px;left:8px}.powerbank{width:70px;height:120px;right:85px;top:46px}.float-tag{left:13px;bottom:13px;padding:10px 12px}.benefit-grid{grid-template-columns:1fr;gap:9px}.benefit{padding:13px}.benefit-icon{width:38px;height:38px}.benefits{padding-bottom:20px}section.products{padding:47px 0}.section-head{display:block}.section-head p{font-size:14px}.product-grid{grid-template-columns:1fr;gap:16px}.product-visual{height:220px}.product-info{padding:19px}.price-row{flex-direction:row;align-items:center}.order-mini{width:auto}.promo{padding:5px 0 50px}.promo-inner{padding:29px 23px;display:block;border-radius:23px}.promo .btn{margin-top:22px}.about{padding-bottom:50px}.about h2{font-size:30px}.footer-row{align-items:flex-start;flex-direction:column;gap:12px}.wa-float{right:14px;bottom:14px;width:54px;height:54px}}
+  </style>
+</head>
+<body>
+  <div class="announcement">SMART TECH, EVERYDAY PRICES · HALISHAHAR, CHATTOGRAM</div>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#home" aria-label="Online home"><span class="brand-mark">O.</span> online<span style="color:#91b52b">.</span></a>
+      <nav class="nav-links" aria-label="Main navigation"><a href="#products">Products</a><a href="#why-us">Why Online</a><a href="#location">Location</a></nav>
+      <a class="nav-cta whatsapp-link" href="#" target="_blank" rel="noopener">Order on WhatsApp <span>↗</span></a>
+    </div>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow"><span></span> Your everyday tech stop</div>
+          <h1>Good tech.<br><em>Better everyday.</em></h1>
+          <p class="hero-copy">Find your next favourite headphones, AirPods, and power bank at Online. Simple shopping, friendly service, right here in Halishahar.</p>
+          <div class="hero-actions"><a class="btn btn-primary" href="#products">Explore products <span>↓</span></a><a class="btn btn-secondary whatsapp-link" href="#" target="_blank" rel="noopener">💬 Chat to order</a></div>
+          <div class="micro-proof"><div class="avatars"><span class="avatar">☺</span><span class="avatar">✓</span><span class="avatar">★</span></div><span>Easy ordering · Local service · Everyday essentials</span></div>
+        </div>
+        <div class="hero-art" aria-label="Illustration of headphones, earbuds, and a power bank">
+          <div class="art-orb"></div><div class="art-card headphone"><span class="cup left"></span><span class="cup right"></span></div><div class="art-card powerbank"></div><div class="art-card earbuds"><span class="bud"></span><span class="bud"></span></div><div class="float-tag">Your tech, your way<small>Small essentials. Big difference.</small></div>
+        </div>
+      </div>
+    </section>
+    <section class="benefits" id="why-us">
+      <div class="container benefit-grid">
+        <div class="benefit"><div class="benefit-icon">⚡</div><div><strong>Everyday essentials</strong><span>Useful tech for work, study & travel</span></div></div>
+        <div class="benefit"><div class="benefit-icon">💬</div><div><strong>Easy WhatsApp orders</strong><span>Ask questions before you buy</span></div></div>
+        <div class="benefit"><div class="benefit-icon">📍</div><div><strong>Local to Halishahar</strong><span>Find us in K Block, Chattogram</span></div></div>
+      </div>
+    </section>
+    <section class="products" id="products">
+      <div class="container">
+        <div class="section-head"><div><div class="kicker">Shop the essentials</div><h2>Tech you’ll use every day.</h2></div><p>Choose a category, check the sample price, and message us on WhatsApp to confirm availability.</p></div>
+        <div class="product-grid">
+          <article class="product">
+            <div class="product-visual visual-headphone"><span class="pill">Audio favourite</span><div class="headphones-object"></div></div>
+            <div class="product-info"><div class="category">Immersive sound</div><h3>Wireless Headphones</h3><p class="product-desc">Comfortable listening for music, calls, study, and your daily commute.</p><div class="price-row"><div class="price">৳1,250</div><a class="order-mini order-product" data-product="Wireless Headphones" href="#">Order now ↗</a></div></div>
+          </article>
+          <article class="product">
+            <div class="product-visual visual-airpods"><span class="pill">Pocket-sized</span><div class="pods-case"><span class="pod one"></span><span class="pod two"></span></div></div>
+            <div class="product-info"><div class="category">Wireless freedom</div><h3>AirPods / Earbuds</h3><p class="product-desc">A compact, cable-free listening companion for life on the go.</p><div class="price-row"><div class="price">৳1,850</div><a class="order-mini order-product" data-product="AirPods / Earbuds" href="#">Order now ↗</a></div></div>
+          </article>
+          <article class="product">
+            <div class="product-visual visual-powerbank"><span class="pill">Stay charged</span><div class="bank-object"></div></div>
+            <div class="product-info"><div class="category">Power on the go</div><h3>Power Bank</h3><p class="product-desc">Keep your devices topped up while you’re out, travelling, or at work.</p><div class="price-row"><div class="price">৳1,450</div><a class="order-mini order-product" data-product="Power Bank" href="#">Order now ↗</a></div></div>
+          </article>
+        </div>
+        <p class="note">*Prices shown are provided by Online. Please confirm product availability before ordering.</p>
+      </div>
+    </section>
+    <section class="promo">
+      <div class="container"><div class="promo-inner"><div><div class="kicker" style="color:#d7fb67">Need a recommendation?</div><h2>Not sure what fits your needs?</h2><p>Tell us what you’re looking for. We’ll help you choose the right tech.</p></div><a class="btn whatsapp-link" href="#" target="_blank" rel="noopener">Chat with Online ↗</a></div></div>
+    </section>
+    <section class="about" id="location">
+      <div class="container about-grid"><div><div class="kicker">Come say hello</div><h2>Your local stop for everyday tech.</h2></div><div><p>Online makes it easy to shop for handy tech accessories without overcomplicating things. Browse the essentials, ask us a question, and place your order directly on WhatsApp.</p><div class="location-card"><div class="location-pin">📍</div><div><strong>Online · K Block, Halishahar</strong><span>Chattogram (CTG), Bangladesh<br>Message us for directions, availability, and ordering details.</span></div></div></div></div>
+    </section>
+  </main>
+  <footer><div class="container footer-row"><a class="brand" href="#home"><span class="brand-mark">O.</span> online<span style="color:#91b52b">.</span></a><div class="footer-copy">© <span id="year"></span> Online. Everyday tech, made easy.</div><div class="footer-links"><a href="#products">Products</a><a href="#location">Location</a><a class="whatsapp-link" href="#" target="_blank" rel="noopener">WhatsApp</a></div></div></footer>
+  <a class="wa-float whatsapp-link" href="#" target="_blank" rel="noopener" aria-label="Order on WhatsApp" title="Order on WhatsApp">☏</a>
+  <script>
+    // IMPORTANT: Replace this with your WhatsApp number including country code, digits only.
+    // Bangladesh example format: 8801XXXXXXXXX (do not include +, spaces, or dashes).
+    const WHATSAPP_NUMBER = "15484107581";
+    const BASE_MESSAGE = "Hello Online! I would like to ask about your products.";
+    function whatsappUrl(message) {
+      return "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(message);
+    }
+    document.querySelectorAll(".whatsapp-link").forEach(link => {
+      link.href = whatsappUrl(BASE_MESSAGE);
+      link.addEventListener("click", event => {
+        if (WHATSAPP_NUMBER.includes("X")) {
+          event.preventDefault();
+          alert("Please add your WhatsApp number in index.html first. Search for WHATSAPP_NUMBER near the bottom of the file.");
+        }
+      });
+    });
+    document.querySelectorAll(".order-product").forEach(link => {
+      const product =
